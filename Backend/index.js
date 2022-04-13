@@ -7,7 +7,7 @@ const userRoute = require("./routes/users.router");
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname,  "pages",  "index.html"));
+  res.sendFile(path.join(__dirname, "pages", "index.html"));
 });
 
 app.use("/users", userRoute);
